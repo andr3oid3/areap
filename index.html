@@ -6,12 +6,23 @@
     <title>La mia immagine</title>
     <style>
         body {
+            margin: 0;
+            height: 100vh;
+            background-color: #f0f0f0;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f0f0f0;
+            position: relative;
+        }
+        .text-box {
+            position: absolute;
+            top: 1.5cm;
+            left: 1.5cm;
+            font-family: 'Courier New', monospace;
+            font-size: 12pt;
+            color: black;
+            line-height: 1.5;
+            text-align: left;
         }
         img {
             max-width: 100%;
@@ -20,6 +31,12 @@
     </style>
 </head>
 <body>
+    <div class="text-box">
+        andrea palmieri<br>
+        architetto phD<br>
+        milano / rimini<br>
+        info@areapalmieri.it
+    </div>
     <img src="ARP Home, 2018 20133 Milano 00.jpg" alt="La mia immagine">
 </body>
 </html>
